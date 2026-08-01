@@ -1,26 +1,7 @@
-import { useNavigate } from 'react-router';
-
-type SignInForm = {
-    email: string;
-    password: string;
-}
-
 export const SignInPage = () => {
-    const navegate = useNavigate();
-
-    const onSubmit = async (dataForm: SignInForm) => {
-        navegate("/dashboard");
-    }
-
-    const onError = (err: any) => {
-        Object.values(err).map((error: any) => {
-            window.alert(error.message);
-        });
-    }
-
     return (
-        <div className="bg-[#120e16] flex items-center justify-center p-4 w-full h-dvh">
-            <div className="bg-[#1d1826] rounded-xl space-y-6 p-8 w-full max-w-sm min-w-[300px]" >
+        <main className="bg-[#120e16] flex items-center justify-center p-4 w-full h-dvh">
+            <section className="bg-[#1d1826] rounded-xl space-y-6 p-8 w-full max-w-sm min-w-75" >
                 <div className="text-center space-y-2">
                     <h1 className="text-[#ffc107] text-2xl font-bold tracking-tight cursor-default">Welcome back</h1>
                     <p className="text-[#a0a0b0] text-sm cursor-default">Enter your credentials to access your account</p>
@@ -40,7 +21,7 @@ export const SignInPage = () => {
                 </div>
 
                 <p className="text-center text-sm text-[#a0a0b0] cursor-default">Don't have an account?<a href="./signup.tsx" className="text-[#ffc107] font-medium hover:underline"> Sign up</a></p>
-            </div>
-        </div>
+            </section>
+        </main>
     );
 }

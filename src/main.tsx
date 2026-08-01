@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes as ReactRoutes, Route } from 'react-router';
 
 import { Home } from './pages/Home';
-import { SignInPage } from './pages/signin-signup/signin';
+import { SignInPage } from './pages/signin/index';
 
 import './globals.css';
 
