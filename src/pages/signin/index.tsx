@@ -20,7 +20,7 @@ export const SignInPage = () => {
                     <button className="rounded-md text-[#FFFFFF] text-sm font-medium bg-[#120e16] hover:cursor-pointer h-10 px-4 py-2 w-full">X.com</button>
                 </div>
 
-                <p className="text-center text-sm text-[#a0a0b0] cursor-default">Don't have an account?<a href="./signup.tsx" className="text-[#ffc107] font-medium hover:underline"> Sign up</a></p>
+                <p className="text-center text-sm text-[#a0a0b0] cursor-default">Don't have an account?<a href="./signup" className="text-[#ffc107] font-medium hover:underline"> Sign up</a></p>
             </section>
         </main>
     );
