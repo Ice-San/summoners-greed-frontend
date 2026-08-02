@@ -6,7 +6,7 @@ export const Home = () => {
         <main className="relative min-h-screen overflow-hidden bg-[#120e16]">
             <div className="relative">
                 <header className="fixed h-auto inset-x-0 top-4 flex justify-center items-center font-bold z-10">
-                    <div className="flex px-6 h-16 justify-between items-center w-full md:w-3/5 min-w-50 bg-[#1d1826]/95 rounded-xl">
+                    <div className="flex px-6 mx-2 h-16 justify-between items-center w-full md:w-3/5 min-w-50 bg-[#1d1826]/95 rounded-xl">
                         <p className="cursor-pointer  text-xl tracking-tight text-[#ffc107]">Summoner's Greed</p>
 
                         <button className="bg-[#ffc107] w-29 inline-flex items-center justify-center rounded-md text-sm font-medium transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-9 px-6 shadow-md hover:scale-105 hover:bg-[#ffc107]/90">
@@ -16,7 +16,7 @@ export const Home = () => {
                 </header>
 
                 <section className="flex h-dvh w-full flex-col items-center justify-center">
-                    <div className="w-full h-full bg-[url('./imgs/banner.webp')] bg-cover bg-center bg-no-repeat">
+                    <div className="w-full h-full bg-[url('/imgs/banner.webp')] bg-cover bg-center bg-no-repeat">
                         <div className="w-full h-full bg-linear-to-b from-[#1d1826]/55 via-slate-950/90 to-[#1d1826] pt-25">
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.8 }}
@@ -71,7 +71,7 @@ export const Home = () => {
                                     <div className="h-20 w-full mt-7 mb-15">
                                         <p className=" text-gray-300 text-lg md:text-xl leading-relaxed ">Just beat the Joint Revenge on Nightmare difficulty! The new Speedy + Kevin combo is absolutely broken. Who else is using this? 🔥</p>
                                     </div>
-                                    <div className="w-full h-130 rounded-3xl bg-[url('./imgs/sg.jpg')] bg-cover bg-center bg-no-repeat"></div>
+                                    <div className="w-full h-130 rounded-3xl bg-[url('/imgs/sg.jpg')] bg-cover bg-center bg-no-repeat"></div>
                                     <div className="flex gap-5 w-full h-10 border-t border-white/5 pt-3">
                                         <button className="flex items-center gap-2 text-gray-400 hover:text-yellow-500 transition-colors delay-75 ease-in">
                                             <MessageSquare />
